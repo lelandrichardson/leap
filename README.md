@@ -18,6 +18,29 @@ static void Main(string[] args)
     controller.RemoveListener(listener);
     controller.Dispose();
 }
+
+static void Main(string[] args) {
+    var listener = new GestureListener();
+    listener.on("swipe.left", gesture => {
+         // do stuff
+    });
+    
+    listener.on("swipe.right", gesture => {
+        // go stuff
+    });
+
+}
+
+
+
+public void onGesture(Gesture[] gestures) {
+    //
+    
+}
+
+
+
+
 ```
 
 
